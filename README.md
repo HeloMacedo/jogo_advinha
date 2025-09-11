@@ -1,48 +1,48 @@
-# repertorio do jogo e analise 
+# Jogo de Adivinhação
 
-A analise de requisitos é bom para clariar a visão de roteiro e para o a direção do projeto, ajuda a garanti que o software seja capaz de atingir o objetivo  
+#  Objetivo do Projeto
+Treinar análise de requisitos utilizando a técnica **User Stories**, além de implementar o jogo de forma prática.
 
-# 6 etapas principais para os requisitos de analise 
+# O que é
 
-Etapa 1 - indentificar as partes interesadas do projeto como gerente, cliente e até mesmo a propria equipe, por mais que seja inetresses diferentes conta do mesmo jeito
-caso a desenvolvidor preferir agrupar em notas ou anotar os diferentes intereses de cada um é masi facil para se organizar na criação do jogo  
+Esse jogo é bem simples: o computador escolhe um número secreto e o jogador tenta adivinhar qual é.
+A cada palpite, o sistema fala se o número é maior, menor ou se o jogador acertou.
 
-etapa 2 - 
+# O que usei
 
-# tecnica utilizada User Storie (descrição curta e informal)
+Python (pode rodar no terminal) ou JavaScript (pode abrir no navegador).
+GitHub para guardar o projeto e mostrar como foi feito.
 
-Como jogador, quero que o sistema escolha um número secreto automaticamente, para que eu possa tentar adivinhar.
-Como jogador, quero digitar um número como palpite, para tentar adivinhar o número secreto.
-Como jogador, quero receber uma mensagem se o palpite está correto, maior ou menor, para saber se continuo tentando.
-Como jogador, quero que o jogo conte quantas tentativas eu fiz, para eu saber meu desempenho.
-Como jogador, quero que o jogo termine quando eu acertar o número, para encerrar a partida.
+# Requisitos
+
+# User Stories (histórias do usuário)
+
+Como jogador, quero que o computador escolha um número secreto para eu tentar adivinhar.
+Como jogador, quero poder digitar meus palpites.
+Como jogador, quero receber dicas se o número é maior ou menor que o que pensei.
+Como jogador, quero saber quantas tentativas fiz.
+Como jogador, quero que o jogo termine quando eu acertar.
+
+# Requisitos Funcionais
+
+O jogo gera um número secreto.
+O jogador digita palpites.
+O sistema responde se é maior, menor ou igual.
+O sistema mostra quando o jogador acerta.
+O jogo conta o número de tentativas.
 
 # Requisitos Não Funcionais
 
-O jogo deve ser simples e rápido de usar.
-Deve rodar em qualquer computador com Python ou navegador (se for em JavaScript).
-O sistema deve responder imediatamente a cada tentativa.
+O jogo deve ser fácil e rápido de jogar.
+Funciona no computador (Python) ou navegador (JavaScript).
+As respostas devem aparecer na hora.
 
-# Fluxo do Jogo
+# Como funciona o jogo (fluxo)
 
-O sistema gera aleatoriamente um número secreto.
-O jogador digita um palpite.
-O sistema verifica o palpite:
-Se for maior → mostra “Tente um número menor”.
-Se for menor → mostra “Tente um número maior”.
-Se for igual → mostra “Parabéns, você acertou em X tentativas!”.
-O jogo termina quando o jogador acerta.
-
-# Caso de Uso (UML)
-
-Mesmo que a técnica principal seja User Stories, você pode reforçar mostrando o diagrama.
-
-Ator principal: Jogador
-Sistema: Jogo de Adivinhação
-
-# Caso de Uso:
-
-Jogar partida
-Inserir palpite
-Receber dica (maior/menor)
-Acertar número secreto
+O computador escolhe um número secreto.
+O jogador chuta um número.
+O computador responde:
+“Tente um número menor” se o palpite for muito alto.
+“Tente um número maior” se for muito baixo.
+“Parabéns, você acertou!” se for igual.
+O jogo acaba quando o jogador acerta.
